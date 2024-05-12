@@ -1,0 +1,284 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+  }
+  
+  header nav ul li a:hover {
+    background-color: #34495e; /* Color al pasar el mouse */
+  }
+  
+  section {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .redes-sociales {
+    margin-top: 30px; /* Ajusta el espacio entre el contenido y los iconos de redes sociales */
+  }
+  
+  .redes-sociales a {
+    display: inline-block; /* Permite ajustar el tamaño de los iconos */
+    margin: 0 10px; /* Ajusta el espacio entre los iconos */
+  }
+  
+  .redes-sociales img {
+    width: 40px; /* Define el ancho de los iconos */
+    height: auto; /* Mantiene la proporción de aspecto */
+  }
+  
+  /* Estilos específicos */
+  #inicio {
+    position: relative; /* Establece posición relativa para que los elementos hijos puedan ser posicionados relativos a este */
+    color: #090909;
+    text-align: center;
+    padding: 100px 0; /* Ajusta el espacio alrededor del contenido */
+  }
+  
+  #inicio .fondo-opaco {
+    position: absolute; /* Establece posición absoluta para que este elemento no afecte al flujo del contenido */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/el_1.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área */
+    opacity: 0.3; /* Reduce la opacidad de la imagen de fondo */
+  }
+  
+  #inicio .contenido {
+    position: relative; /* Establece posición relativa para que los elementos hijos puedan ser posicionados relativos a este */
+  }
+  
+  #inicio h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  #inicio h3 {
+    font-size: 25px;
+  
+  }
+  
+  #inicio img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  
+  #sobre-mi {
+    text-align: center; /* Centra el texto */
+    padding: 100px 0; /* Ajusta el espacio alrededor del contenido */
+  }
+  
+  #sobre-mi .container {
+    max-width: 600px; /* Limita el ancho del contenedor para que el texto no se extienda demasiado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  #sobre-mi h2 {
+    font-size: 48px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior entre el título y el párrafo */
+  }
+  
+  #sobre-mi p {
+    font-size: 28px; /* Tamaño del párrafo */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  }
+  
+
+  #experiencia {
+    
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px; /* Ajusta el espacio entre la sección y el pie de página */
+  }
+  
+  #experiencia h2 {
+    font-size: 48px; 
+    margin-bottom: 50px; /* Ajusta el espacio entre el título y las empresas */
+    margin-top: 30px; /* Ajusta el espacio entre el título y el contenido */
+  }
+  
+  #experiencia .container {
+    display: flex; /* Utiliza flexbox para crear una fila */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente con espacio alrededor */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si el espacio es insuficiente */
+  }
+  
+  .experiencia-item {
+    width: 45%; /* Define el ancho de cada experiencia */
+    background-color: #f9f9f9; /* Color de fondo para resaltar las experiencias */
+    padding: 20px; /* Ajusta el espacio dentro de cada experiencia */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    margin-bottom: 20px; /* Ajusta el espacio entre las empresas */
+  }
+  
+  .experiencia-item .logo {
+    text-align: center; /* Centra el logo horizontalmente */
+  }
+  
+  .experiencia-item .logo img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-item .info {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .experiencia-item .info h3 {
+    margin-top: 10px; /* Ajusta el espacio entre el logo y el nombre de la empresa */
+  }
+  
+  .experiencia-item .info p {
+    margin-top: 10px; /* Ajusta el espacio entre el nombre de la empresa y la descripción */
+  }
+  
+
+  #proyectos {
+    padding: 100px 0; /* Ajusta el espacio alrededor del contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  #proyectos h2 {
+   
+        font-size: 48px; 
+        margin-bottom: 50px; /* Ajusta el espacio entre el título y las empresas */
+        margin-top: 30px; /* Ajusta el espacio entre el título y el contenido */
+      
+  }
+  
+  #proyectos .container {
+    display: flex; /* Utiliza flexbox para crear una fila */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente con espacio alrededor */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si el espacio es insuficiente */
+  }
+  
+  .proyecto-item {
+    width: 30%; /* Define el ancho de cada proyecto */
+    background-color: #f9f9f9; /* Color de fondo para resaltar los proyectos */
+    padding: 20px; /* Ajusta el espacio dentro de cada proyecto */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    margin-bottom: 20px; /* Ajusta el espacio entre los proyectos */
+  }
+  
+  .proyecto-item .imagen {
+    text-align: center; /* Centra la imagen horizontalmente */
+  }
+  
+  .proyecto-item .imagen img {
+    width: 100px; /* Tamaño de la imagen */
+  }
+  
+  .proyecto-item .info {
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .proyecto-item .info h3 {
+    margin-top: 10px; /* Ajusta el espacio entre la imagen y el nombre del proyecto */
+  }
+
+  
+  .proyecto-item .info p {
+    margin-top: 10px; /* Ajusta el espacio entre el nombre del proyecto y la descripción */
+  }
+  
+  #habilidades {
+    padding: 100px 0; /* Ajusta el espacio alrededor del contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  #habilidades h2 {
+    font-size: 48px; 
+        margin-bottom: 50px; /* Ajusta el espacio entre el título y las empresas */
+        margin-top: 30px; /* Ajusta el espacio entre el título y el contenido */
+      
+  }
+  
+  #habilidades .container {
+    display: flex; /* Utiliza flexbox para crear una fila */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente con espacio alrededor */
+  }
+  
+  .habilidad-item {
+    width: 18%; /* Define el ancho de cada habilidad */
+    background-color: #f9f9f9; /* Color de fondo para resaltar las habilidades */
+    padding: 20px; /* Ajusta el espacio dentro de cada habilidad */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    margin-bottom: 20px; /* Ajusta el espacio entre las habilidades */
+  }
+  
+  .habilidad-item h3 {
+    margin-bottom: 10px; /* Ajusta el espacio entre el nombre de la habilidad y la barra de progreso */
+  }
+  
+  .barra {
+    background-color: #ddd; /* Color de fondo de la barra de progreso */
+    height: 20px; /* Altura de la barra de progreso */
+    border-radius: 10px; /* Agrega bordes redondeados a la barra de progreso */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+  }
+  
+  .nivel {
+    height: 100%; /* Altura de la barra de progreso */
+  }
+  
+  /* Estilos específicos para cada habilidad */
+  .html { width: 90%; background-color: #4CAF50; } /* Ejemplo de habilidad HTML */
+  .css { width: 80%; background-color: #2196F3; } /* Ejemplo de habilidad CSS */
+  .javascript { width: 70%; background-color: #f44336; } /* Ejemplo de habilidad JavaScript */
+  .java { width: 85%; background-color: #FFC107; } /* Ejemplo de habilidad Java */
+  .cpp { width: 75%; background-color: #FF5722; } /* Ejemplo de habilidad C++ */
+  
